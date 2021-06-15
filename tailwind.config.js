@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ['Poppins']
-      }
+      },
+      backgroundImage: theme => ({
+        'main-pic': "url('/images/webaliser-_TPTXZd9mOo-unsplash.jpg')",
+       })
     },
   },
   variants: {

@@ -19,7 +19,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'main-pic': "linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg')",
-        'hero-pic': " url('/images/Modern-residence.jpg')",
+        'hero-pic': "linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg')",
 
        })
     },

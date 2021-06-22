@@ -4446,7 +4446,7 @@ video {
 }
 
 .bg-hero-pic{
-  background-image:  url('/images/Modern-residence.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg');
 }
 
 .from-transparent{
@@ -36315,7 +36315,7 @@ video {
   }
 
   .sm\:bg-hero-pic{
-    background-image:  url('/images/Modern-residence.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg');
   }
 
   .sm\:from-transparent{
@@ -68106,7 +68106,7 @@ video {
   }
 
   .md\:bg-hero-pic{
-    background-image:  url('/images/Modern-residence.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg');
   }
 
   .md\:from-transparent{
@@ -99897,7 +99897,7 @@ video {
   }
 
   .lg\:bg-hero-pic{
-    background-image:  url('/images/Modern-residence.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg');
   }
 
   .lg\:from-transparent{
@@ -131688,7 +131688,7 @@ video {
   }
 
   .xl\:bg-hero-pic{
-    background-image:  url('/images/Modern-residence.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg');
   }
 
   .xl\:from-transparent{
@@ -163479,7 +163479,7 @@ video {
   }
 
   .\32xl\:bg-hero-pic{
-    background-image:  url('/images/Modern-residence.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/Modern-residence.jpg');
   }
 
   .\32xl\:from-transparent{

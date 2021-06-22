@@ -4445,6 +4445,10 @@ video {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg');
 }
 
+.bg-hero-pic{
+  background-image:  url('/images/Modern-residence.jpg');
+}
+
 .from-transparent{
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -36310,6 +36314,10 @@ video {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg');
   }
 
+  .sm\:bg-hero-pic{
+    background-image:  url('/images/Modern-residence.jpg');
+  }
+
   .sm\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -68095,6 +68103,10 @@ video {
 
   .md\:bg-main-pic{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg');
+  }
+
+  .md\:bg-hero-pic{
+    background-image:  url('/images/Modern-residence.jpg');
   }
 
   .md\:from-transparent{
@@ -99884,6 +99896,10 @@ video {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg');
   }
 
+  .lg\:bg-hero-pic{
+    background-image:  url('/images/Modern-residence.jpg');
+  }
+
   .lg\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -131671,6 +131687,10 @@ video {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg');
   }
 
+  .xl\:bg-hero-pic{
+    background-image:  url('/images/Modern-residence.jpg');
+  }
+
   .xl\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -163456,6 +163476,10 @@ video {
 
   .\32xl\:bg-main-pic{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('/images/AMAIA DUPLEX - PERSPECTIVE RENDER 3.jpg');
+  }
+
+  .\32xl\:bg-hero-pic{
+    background-image:  url('/images/Modern-residence.jpg');
   }
 
   .\32xl\:from-transparent{

@@ -227,6 +227,10 @@ SVG Icons - svgicons.sparkk.fr
   margin: 0 auto;
 }
 
+.d-none {
+  display: none;
+}
+
 
 .white{
   color: white;
@@ -959,12 +963,6 @@ SVG Icons - svgicons.sparkk.fr
 
 
 
-
-
-
-
-
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -980,11 +978,13 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 .contact-subheading {
-  font-weight: 500;
+  font-weight: 300;
   /* letter-spacing: 1px; */
 }
 
+
 .contact-form ul{
+  margin-top: -1rem;
   list-style: none;
   display: block;
 }
@@ -1000,7 +1000,6 @@ SVG Icons - svgicons.sparkk.fr
 #input-specify {
   display: none;
 }
-
 
 .contact-form input[type="radio"] {
   width: 0;
@@ -1038,10 +1037,8 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 .contact-form input[type="text"]::placeholder, .contact-form textarea::placeholder {
-
   color: #78716c;
   font-weight: 300;
-
 }
 
 .contact-form textarea { 
@@ -1067,6 +1064,34 @@ SVG Icons - svgicons.sparkk.fr
   height: 2.4rem;
   width: 2.4rem;
 }
+
+.contact-form input[type="text"].invalid, .contact-form textarea.invalid {
+  box-shadow:  0 2px 0 0 red;
+}
+
+.contact-form input[type="text"].valid, .contact-form textarea.valid {
+  box-shadow:  0 2px 0 0 green;
+}
+
+.contact-form input[type="text"].invalid + .error-message, .contact-form textarea.invalid + .error-message{
+  display: inline-block;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  margin-top: .5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+
+
+.error-message.select-invalid {
+  display: block;
+  margin-top: -2.4rem;
+}
+
 
 /************************************/
 /***** FOOTER*****/

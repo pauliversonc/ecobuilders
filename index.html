@@ -13,23 +13,23 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body id="home">
   <header class="section-header">
     <a href="#"><img class="logo" src="images/logo/logo-2.png" alt=""></a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#">Home</a></li>
-        <li><a class="main-nav-link" href="#">About</a></li>
-        <li><a class="main-nav-link" href="#">Projects</a></li>
-        <li><a class="main-nav-link" href="#">Services</a></li>
-        <li><a class="main-nav-link" href="#">Testimonials</a></li>
-        <li><a class="main-nav-link" href="#">Pricing</a></li>
+        <li><a class="main-nav-link" href="#home">Home</a></li>
+        <li><a class="main-nav-link" href="#about">About</a></li>
+        <li><a class="main-nav-link" href="#projects">Projects</a></li>
+        <li><a class="main-nav-link" href="#services">Services</a></li>
+        <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
         <!-- <li><a class="main-nav-link btn btn-nav" href="#">Contacts</a></li> -->
 
       </ul>
     </nav>
     <!-- <button class="btn btn-nav" style="">Contact Us</button> -->
-    <a class="btn btn-fill" href="#">Conctact us</a>
+    <a class="btn btn-fill" href="#contacts">Conctact us</a>
 
   </header>
 
@@ -55,7 +55,7 @@
   </section>
 
 
-  <section class="section-about">
+  <section class="section-about" id="about">
     <div class="container grid-about">
       <h2 class="heading-secondary">Why choose ECO Builders?</h2>
       <img class="grid-about-img shadow" src="/images/hero/alexander-andrews-Dr6VBM0KNsw-unsplash.jpg" alt="">
@@ -88,7 +88,7 @@
     </div>
   </section>
 
-  <section class="section-project">
+  <section class="section-project" id="projects">
     <div class="container-sm">
       <h2 class="heading-secondary mb-4 ">Our projects</h2>
     </div>
@@ -141,7 +141,7 @@
     </div>
   </section>
 
-  <section class="section-service">
+  <section class="section-service" id="services">
     <div class="container service-heading">
       <h4 class="heading-secondary white center">Services offer</h4>
       <p class="normal-ptext white service-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est harum ducimus eos adipisci dignissimos?</p>
@@ -183,7 +183,7 @@
     </div>
   </section>
 
-  <section class="section-testimonial">
+  <section class="section-testimonial" id="testimonials">
     <div class="container">
       <h2 class="heading-secondary mb-4">Our clients feedback</h2>
     </div>
@@ -284,7 +284,7 @@
     </div>
   </section>
 
-  <section class="section-pricing">
+  <section class="section-pricing" id="pricing">
     <div class="container pricing-heading">
       <h2 class="heading-secondary center">Ready to get started?</h2>
       <p class="normal-ptext service-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit.</p>
@@ -554,7 +554,7 @@
   </section>
 
 
-  <section class="section-contact">
+  <section class="section-contact" id="contacts">
     <div class="container flex-header">
       <h2 class="heading-secondary">Get in touch</h2>
       <p class="normal-ptext flex-header-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit.</p>
@@ -613,39 +613,57 @@
         <form class="contact-form">
           <p class="contact-subheading">I'm interested in..</p>
 
-          <ul>
-            <li>
-              <input type="radio" id="package1" name="interest" value="package1">
-              <label for="package1" class="btn">Package 1</label>
-            </li>
-            <li>
-              <input type="radio" id="package2" name="interest" value="package2">
-              <label for="package2" class="btn">Package 2</label>
-            </li>
+              <ul class="">
+                <li>
+                  <input type="radio" id="package1" name="interest" value="package1">
+                  <label for="package1" class="btn">Package 1</label>
+                </li>
+                <li>
+                  <input type="radio" id="package2" name="interest" value="package2">
+                  <label for="package2" class="btn">Package 2</label>
+                </li>
 
-            <li>
-              <input type="radio" id="package3" name="interest" value="package3">
-              <label for="package3" class="btn">Package 3</label>
-            </li>
+                <li>
+                  <input type="radio" id="package3" name="interest" value="package3">
+                  <label for="package3" class="btn">Package 3</label>
+                </li>
 
-            <li>
-              <input type="radio" id="package4" name="interest" value="package4">
-              <label for="package4" class="btn">Package 4</label>
-            </li>
+                <li>
+                  <input type="radio" id="package4" name="interest" value="package4">
+                  <label for="package4" class="btn">Package 4</label>
+                </li>
 
-            <li>
-              <input type="radio" id="others" name="interest" value="others">
-              <label for="others" class="btn">Others</label>
-            </li>            
-          </ul>
+                <li>
+                  <input type="radio" id="others" name="interest" value="others">
+                  <label for="others" class="btn">Others</label>
+                </li>            
+              </ul>
+
+              <span id="interest-error" class="error-message">Error Message</span>
 
 
 
-            <input type="text" id="input-specify" placeholder="Please specify" name="other">
-            <input type="text" placeholder="Your name" name="name">
-            <input type="text" placeholder="Your email" name="email">
-            <textarea name="details" rows="5" placeholder="Tell us more"></textarea>
-            <button class="form-btn btn">Send</button>
+            <div class="form-control" id="input-specify">
+              <input id="specify" class="" type="text" placeholder="Please specify" name="other">
+              <span id="specify-error" class="error-message">Error Message</span>
+            </div>
+
+            <div class="form-control">
+              <input id="name" class="" type="text" placeholder="Your name" name="name">
+              <span id="name-error" class="error-message">Error Message</span>
+            </div>
+
+            <div class="form-control">
+              <input id="email" class="" type="text" placeholder="Your email" name="email">
+              <span id="email-error" class="error-message">Error Message</span>
+            </div>
+
+            <div class="form-control">
+              <textarea id="details" class="" name="details" rows="5" placeholder="Tell us more"></textarea>
+              <span id="details-error" class="error-message">Error Message</span>
+            </div>
+
+            <button id="submit" class="form-btn btn">Send</button>
         </form>
 
       </div>
@@ -664,13 +682,13 @@
       <div class="footer-links-wrapper"> 
         <p class="footer-links-heading">Links</p>
         <ul class="footer-links">
-          <li><a class="footer-link" href="#">Home</a></li>
-          <li><a class="footer-link" href="#">About</a></li>
-          <li><a class="footer-link" href="#">Projects</a></li>
-          <li><a class="footer-link" href="#">Services</a></li>
-          <li><a class="footer-link" href="#">Testimonials</a></li>
-          <li><a class="footer-link" href="#">Pricing</a></li>
-          <li><a class="footer-link" href="#">Contacts</a></li>
+          <li><a class="footer-link" href="#home">Home</a></li>
+          <li><a class="footer-link" href="#about">About</a></li>
+          <li><a class="footer-link" href="#projects">Projects</a></li>
+          <li><a class="footer-link" href="#services">Services</a></li>
+          <li><a class="footer-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="footer-link" href="#pricing">Pricing</a></li>
+          <li><a class="footer-link" href="#contacts">Contacts</a></li>
         </ul>
       </div>
 

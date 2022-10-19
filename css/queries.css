@@ -1,0 +1,199 @@
+/* 1600 below (Bigger desktops) */
+@media (max-width: 100em) {
+  .heading-primary {
+    font-size: 11.2rem;
+  }
+
+  .heading-secondary, .about-stats-card span {
+    font-size: 7.6rem;
+  }
+  
+  .grid-about, .grid-service, .grid-pricing, .pricing-table--wrapper, .contact-card--wrapper {
+    padding: 0 10rem;
+  }
+
+  .hero-textbox, .testimonial-wrapper, .heading-testimonials {
+    margin-left: 10rem;
+  }
+
+  .section-footer {
+    padding: 8rem 10rem;
+  }
+
+}
+
+
+/* 1476 below (Adjustment for bigger desktops) */
+@media (max-width: 92.25em) {
+
+  .heading-primary {
+    font-size: 10.6rem;
+  }
+
+  .heading-secondary, .about-stats-card span {
+    font-size: 7rem;
+  }
+  
+
+  .hero-textbox {
+    max-width: 100rem;
+  } 
+}
+
+/* 1396 below (Adjustment for bigger desktops) */
+@media (max-width: 87.25em) {
+
+  html {
+    font-size: 56.25%;  
+  }
+
+  /* .contact-details-lists {
+    padding: 0 5rem 0 0;
+  } */
+  
+}
+
+/* 1200 below (Laptops) */
+@media (max-width: 75em) {
+  html {
+    font-size: 53.125%;  
+    /* 8.5px */
+  }
+
+  .card-pricing-price {
+    font-size: 5.6rem;
+  }
+
+  .heading-project--wrapper,
+  .grid-project--wrapper {
+    padding: 0 6rem;
+  }
+
+  .pricing-card-title {
+    font-size: 2.2rem;
+  }
+
+  .pricing-card-heading-icon {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+  /* Services Section */
+  .service-card {
+    padding: 3rem;
+  }
+
+  .service-icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Testimonials Section */
+  .testimonial-card {
+    padding: 4rem 3rem 3rem 3rem;
+  }
+
+  /* Pricing Section */
+
+  .pricing-card {
+    padding: 4rem 3rem;
+  }
+
+  .pricing-card-description {
+    font-size: 1.8rem;
+  }
+
+  .grid-contact-card {
+    padding: 3rem;
+  }
+
+  .btn {
+    padding: 1.4rem 4.6rem;
+  }
+
+  /* Contact Section */
+  .grid-contact-card {
+    grid-template-columns: 5fr 7fr;
+  } 
+
+  .contact-form {
+    padding: 3rem;
+  }
+
+  /* Paddings */
+  .grid-about, .grid-service, .grid-pricing, .pricing-table--wrapper, .contact-card--wrapper, .section-header {
+    padding: 0 8rem;
+  }
+
+  .hero-textbox, .testimonial-wrapper, .heading-testimonials {
+    margin-left: 8rem;
+  }
+
+  .section-footer {
+    padding: 8rem 8rem;
+  }
+
+
+}
+
+
+/* 1088 below (Adjustments Laptops) */
+@media (max-width: 68em) {
+
+  /* Paddings */
+  .grid-about, .grid-service, .grid-pricing, .pricing-table--wrapper, .contact-card--wrapper, .section-header {
+    padding: 0 4rem;
+  }
+
+  .hero-textbox, .testimonial-wrapper, .heading-testimonials {
+    margin-left: 4rem;
+  }
+
+  .section-footer {
+    padding: 8rem 4rem;
+  }
+
+  .about-stats-cards {
+    justify-items: start;
+  }
+
+  .heading-project--wrapper,
+  .grid-project--wrapper {
+    padding: 0 8rem;
+  }
+
+}
+
+/* 1024 below (Landscape Tablets) */
+@media (max-width: 64em) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 1200 below (Laptop) */
+/* @media (max-width: 75em) {
+
+  html {
+    font-size: 59.375%;  
+    
+  }
+
+  .service-subheading, .flex-header-subheading {
+    margin: 2rem 0 4rem;
+  }
+  
+} */
+
+
+/* 56.25 */

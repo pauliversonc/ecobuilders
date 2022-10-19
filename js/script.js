@@ -65,6 +65,11 @@ function validate(event) {
   const email = document.getElementById("email").value;
   const details = document.getElementById("details").value;
 
+  const specify_cl = document.getElementById("specify")
+  const name_cl = document.getElementById("name")
+  const email_cl = document.getElementById("email")
+  const details_cl = document.getElementById("details")
+
   const specify_trim = specify.replace(/^\s+|\s+$/gm,'');
   const name_trim = name.replace(/^\s+|\s+$/gm,'');
   const details_trim = details.replace(/^\s+|\s+$/gm,'');
@@ -76,17 +81,46 @@ function validate(event) {
   const email_valid =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
   const details_valid = details_trim.length >= 10? true : false;
 
+  const interest_val = document.querySelector('input[name = "interest"]:checked').value;
   
   // check lahat ng forms if may laman
   if (interest_valid && name_valid && email_valid && details_valid) {
-  const interest_val = document.querySelector('input[name = "interest"]:checked').value;
     
   // if true required specify
     if (interest_val === 'others') {
 
       // if true specify is required
       if (specify_valid) {
-        console.log('form submitted with specify')
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "penpenzetroc@gmail.com",
+          Password : "C311C834C77B382221D237222669381C37B9",
+          To : 'conchubns@gmail.com',
+          From : "penpenzetroc@gmail.com",
+          Subject : "ECO Builders Mailing System",
+          Body : 
+          `
+            <strong>Name:</strong> ${name} <br>
+            <strong>Email:</strong> ${email} <br>
+            <strong>Interest:</strong> ${interest_val} <br>
+            <strong>Specify:</strong> ${specify} <br><br>
+            <strong>Message:</strong> ${details} <br><br><br>
+  
+  
+            <i>Please Don't reply to this email!</i>
+          `
+      }).then(
+        message => console.log(message),
+        value => console.log(value),
+        alert('Message sent successfully!'),
+        interest.checked = false,
+        specify_cl.value = '',
+        name_cl.value = '',
+        email_cl.value = '',
+        details_cl.value = '',
+
+
+      );
       // else throw error
       } else {
         const specify_input = document.getElementById("specify");
@@ -97,7 +131,33 @@ function validate(event) {
 
     // else hindi required specify
     } else {
-      console.log('form submitted without specify')
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "penpenzetroc@gmail.com",
+        Password : "C311C834C77B382221D237222669381C37B9",
+        To : 'conchubns@gmail.com',
+        From : "penpenzetroc@gmail.com",
+        Subject : "ECO Builders Mailing System",
+        Body : 
+        `
+          <strong>name:</strong> ${name} <br>
+          <strong>email:</strong> ${email} <br>
+          <strong>interest:</strong> ${interest_val} <br>
+          <strong>message:</strong> ${details} <br><br><br>
+
+
+          <i>Please Don't reply to this email!</i>
+        `
+    }).then(
+      message => console.log(message),
+      value => console.log(value),
+      alert('Message sent successfully!'),
+      interest.checked = false,
+      name_cl.value = '',
+      email_cl.value = '',
+      details_cl.value = '',
+    );
+
     }
 
   } else {

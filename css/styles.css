@@ -101,7 +101,7 @@ SVG Icons - svgicons.sparkk.fr
   justify-content: space-between;
   align-items: center;
   height: 8rem;
-  padding: 0 16rem;
+  padding: 0 10rem;
 }
 
 .logo {
@@ -328,6 +328,7 @@ SVG Icons - svgicons.sparkk.fr
 
 .grid-about-img {
   width: 100%;
+  height: 100%;
   grid-column: 1;
   grid-row: 2/4;
 
@@ -622,7 +623,8 @@ SVG Icons - svgicons.sparkk.fr
   display: flex;
   flex-direction: column;
 
-  justify-items: center;
+
+  height: 100%;
 }
 .pricing-card-heading {
   display: grid;
@@ -680,21 +682,9 @@ SVG Icons - svgicons.sparkk.fr
 .card-pricing-btn {
   display: block;
   width: 100%;
-  
-  border: none;
-  outline: none;
-  cursor: pointer;
   margin-bottom: 3rem;
-
-  text-transform: uppercase;
-  padding: 1.6rem 0;
-
   color: #fff;
   background-color: #86AD12;
-
-  font-size: 1.4rem;
-  font-weight: 600;
-
   transition: 0.3s ease;
 }
 
@@ -888,13 +878,17 @@ SVG Icons - svgicons.sparkk.fr
   margin: 2rem 0 8rem;
 }
 
+.contact-card--wrapper {
+  margin-bottom: 16rem;
+}
+
 .grid-contact-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-image: linear-gradient(to right, rgba(67, 81, 14, 0.7), rgba(28, 25, 23, 1)), url("/images/hero/paul-blenkhorn-gkKI23ZeaHM-unsplashb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .contact-details {
@@ -1032,7 +1026,9 @@ SVG Icons - svgicons.sparkk.fr
   width: 100%;
   padding: 1rem 0;
   color: #1c1917;
-  box-shadow:  0 2px 0 0 #78716c;
+  /* box-shadow: 0 2px 0 0 #78716c; */
+
+  border-bottom: 2px solid #78716c;
   /* resize: none; */
 }
 
@@ -1052,7 +1048,7 @@ SVG Icons - svgicons.sparkk.fr
   display: flex;
   justify-content: center;
 
-  padding: 1.6rem 6.8rem;
+  
 }
 
 .form-btn:hover {
@@ -1066,11 +1062,14 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 .contact-form input[type="text"].invalid, .contact-form textarea.invalid {
-  box-shadow:  0 2px 0 0 red;
+  /* box-shadow:  0 2px 0 0 red; */
+  border-bottom: 2px solid red;
 }
 
 .contact-form input[type="text"].valid, .contact-form textarea.valid {
-  box-shadow:  0 2px 0 0 green;
+  /* box-shadow:  0 2px 0 0 green; */
+  border-bottom: 2px solid green;
+
 }
 
 .contact-form input[type="text"].invalid + .error-message, .contact-form textarea.invalid + .error-message{

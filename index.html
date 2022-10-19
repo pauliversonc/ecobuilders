@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ECO Builders | Lorem, ipsum.</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/queries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap"
@@ -62,8 +63,7 @@
       <p class="normal-ptext about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt culpa deleniti
         animi corporis consectetur doloribus maiores minima iste eius, error saepe, cumque quia quisquam!</p>
       <p class="normal-ptext about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis itaque totam
-        eos expedita ducimus facilis assumenda. Reiciendis ratione soluta consequatur, eveniet in dolorem, voluptatibus
-        magni neque natus aspernatur tempore.</p>
+        eos expedita ducimus facilis assumenda. Reiciendis ratione soluta consequatur, eveniet in dolorem.</p>
       <p class="normal-ptext about-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam nam dolores harum
         ducimus! Expedita magni aut similique vitae amet nisi officia. Dolore aspernatur, sequi dignissimos minus
         quibusdam natus? lorem25</p>
@@ -89,11 +89,11 @@
   </section>
 
   <section class="section-project" id="projects">
-    <div class="container-sm">
-      <h2 class="heading-secondary mb-4 ">Our projects</h2>
+    <div class="container-sm heading-project--wrapper">
+      <h2 class="heading-secondary mb-4">Our projects</h2>
     </div>
 
-    <div class="container-sm grid-project">
+    <div class="container-sm grid-project grid-project--wrapper">
 
  
         <figure class="project-card">
@@ -144,7 +144,7 @@
   <section class="section-service" id="services">
     <div class="container service-heading">
       <h4 class="heading-secondary white center">Services offer</h4>
-      <p class="normal-ptext white service-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est harum ducimus eos adipisci dignissimos?</p>
+      <p class="normal-ptext white service-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est harum ducimus</p>
     </div>
 
     <div class="container grid-service">
@@ -185,7 +185,7 @@
 
   <section class="section-testimonial" id="testimonials">
     <div class="container">
-      <h2 class="heading-secondary mb-4">Our clients feedback</h2>
+      <h2 class="heading-secondary mb-4 heading-testimonials">Our clients feedback</h2>
     </div>
 
 
@@ -292,6 +292,8 @@
 
     <div class="container grid-pricing">
 
+      <div class="pricing-card--wrapper">
+
       <figure class="pricing-card ">
         <div class="pricing-card-heading">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pricing-card-heading-icon">
@@ -304,7 +306,7 @@
           <p class="card-pricing-sign">&#8369;</p>
           <strong class="card-pricing-price">50k</strong>
         </div>
-        <button class="card-pricing-btn">Get started</button>
+        <button class="card-pricing-btn btn">Get started</button>
         <strong class="card-pricing-list-title">Lite includes:</strong>
         <ul class="card-pricing-lists">
           <li class="card-pricing-list">
@@ -325,7 +327,9 @@
           <a href="#" class="card-pricing-footer-link">See all features</a>
         </div>
       </figure>
+    </div>
 
+      <div class="pricing-card--wrapper">
       <figure class="pricing-card ">
         <div class="pricing-card-heading">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pricing-card-heading-icon">
@@ -338,7 +342,7 @@
           <p class="card-pricing-sign">&#8369;</p>
           <strong class="card-pricing-price">75k</strong>
         </div>
-        <button class="card-pricing-btn">Get started</button>
+        <button class="card-pricing-btn btn">Get started</button>
         <strong class="card-pricing-list-title">Lite includes:</strong>
         <ul class="card-pricing-lists">
           <li class="card-pricing-list">
@@ -365,7 +369,10 @@
           <a href="#" class="card-pricing-footer-link">See all features</a>
         </div>
       </figure>
+    </div>
 
+
+    <div class="pricing-card--wrapper">
       <figure class="pricing-card ">
         <div class="pricing-card-heading">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pricing-card-heading-icon">
@@ -378,7 +385,7 @@
           <p class="card-pricing-sign">&#8369;</p>
           <strong class="card-pricing-price">100k</strong>
         </div>
-        <button class="card-pricing-btn">Get started</button>
+        <button class="card-pricing-btn btn">Get started</button>
         <strong class="card-pricing-list-title">Lite includes:</strong>
         <ul class="card-pricing-lists">
           <li class="card-pricing-list">
@@ -410,7 +417,9 @@
           <a href="#" class="card-pricing-footer-link">See all features</a>
         </div>
       </figure>
+    </div>
 
+    <div class="pricing-card--wrapper">
       <figure class="pricing-card dark">
         <div class="pricing-card-heading">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pricing-card-heading-icon">
@@ -423,7 +432,7 @@
           <p class="card-pricing-sign">&#8369;</p>
           <strong class="card-pricing-price">120k</strong>
         </div>
-        <button class="card-pricing-btn">Get started</button>
+        <button class="card-pricing-btn btn">Get started</button>
         <strong class="card-pricing-list-title">Lite includes:</strong>
         <ul class="card-pricing-lists">
           <li class="card-pricing-list">
@@ -461,13 +470,14 @@
           <a href="#" class="card-pricing-footer-link">See all features</a>
         </div>
       </figure>
+    </div>
 
     </div>
   </section>
 
   <section class="section-pricing-table">
-    <div class="container">
-      <h3 class="heading-tertiary mb-2">Core features</h3>
+    <div class="container pricing-table--wrapper">
+      <h3 class="heading-tertiary mb-4">Core features</h3>
       <table class="pricing-table">
         <thead>
           <tr>
@@ -560,7 +570,7 @@
       <p class="normal-ptext flex-header-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit.</p>
     </div>
 
-    <div class="container">
+    <div class="container contact-card--wrapper">
 
       <div class="grid-contact-card shadow">
 
@@ -701,7 +711,7 @@
       </div>
 
       <div class="footer-pic">
-        <p class="footer-pic-header">Want this fancy website?</p>
+        <p class="footer-pic-header">Want this website?</p>
         <div class="footer-pic-link-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 contact-details-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -713,7 +723,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 contact-details-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
           </svg>
-          <a class="footer-link" href="tel:639394180950">+639 39 418 0950</a>
+          <a class="footer-link" href="tel:639394180950">+63 939 418 0950</a>
         </div> 
       </div>
 
@@ -726,10 +736,10 @@
   
 
   
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
   <script src="js/script.js"></script>
+
 </body>
 </html>

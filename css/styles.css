@@ -303,6 +303,8 @@ SVG Icons - svgicons.sparkk.fr
   margin-left: 16rem;
   transform: translateY(-50%);
   max-width: 120rem;
+
+  z-index: 999;
 }
 
 .hero-container-img {
@@ -1170,6 +1172,10 @@ SVG Icons - svgicons.sparkk.fr
   align-items: center;
 
   gap: 1rem;
+}
+
+.footer-pic-link-wrapper:last-child {
+  margin-top: -1.3rem;
 }
 
 

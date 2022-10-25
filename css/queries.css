@@ -34,7 +34,6 @@
     font-size: 7rem;
   }
   
-
   .hero-textbox {
     max-width: 100rem;
   } 
@@ -60,7 +59,7 @@
     /* 8.5px */
   }
 
-  .card-pricing-price {
+  .card-pricing-sign, .card-pricing-price {
     font-size: 5.6rem;
   }
 
@@ -167,16 +166,325 @@
 
 /* 1024 below (Landscape Tablets) */
 @media (max-width: 64em) {
+  /* GENERAL FONTS */
+  .heading-primary {
+    font-size: 8.6rem;
+  }
+
+  .heading-secondary, .about-stats-card span {
+    font-size: 6.6rem;
+  }
+
+  .card-pricing-sign, .card-pricing-price {
+    font-size: 5.6rem;
+  }
+
+
+  /* HERO SECTION */
+  .hero-container-img {
+    grid-column: 1 / -1;
+    padding: 4rem 4rem 8rem;
+  }
+
+  .hero-img {
+    filter: brightness(70%)
+  }
+
+  .heading-primary, .hero-p {
+  color: white;
+  }
+
+  .hero-textbox {
+    position: absolute;
+    top: 50%;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+
+    padding: 10rem;
+
+  }
+  
+  .width-50 {
+    width: 100%;
+  }
+
+  /* ABOUT US */
+  .grid-about {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-about-img {
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 50%;
+    transform: translateX(50%); 
+    
+    
+  }
+  
+  .about-paragraph:not(:last-child) {
+    padding-top: 0;
+  }
+  
+  
+  
+  .grid-about > p:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .grid-about > p:nth-child(4) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  .about-stats-cards {
+    grid-column: 1;
+    grid-row: 6;
+    
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 4rem;
+  
+    align-items: end;
+    justify-items: center;
+  }
+  
+  /* SERVICES */
+  .grid-service {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* PRICING */
+  .grid-pricing {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .grid-contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details-lists {
+    padding: 0 0 3rem 0;
+  }
+
+  .contact-wrapper {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  /* CORE FEATURE */
+
+  .pricing-table > thead > tr, .pricing-table > tbody > tr {
+    grid-template-columns: 35% 1fr 1fr 1fr 1fr;
+  }
+
+  /* FOOTER */
+  .grid-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+
+
+}
+
+/* 672 below (Adjustments Laptops) */
+@media (max-width: 42em) {
+  /* HERO SECTION*/
+  .hero-textbox {
+    padding: 6rem;
+    top: 45%;
+  }
+
+  /* ABOUT SECTION */
+  .grid-about-img {
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  /* PROJECTS SECTION */
+  .heading-project--wrapper,
+  .grid-project--wrapper {
+    padding: 0 4rem;
+  }
+
+  /* TESTIMONIALS SECTION */
+  .testimonials-conroller {
+    right: 4.4rem;
+}
+
+}
+
+/* 634 below (Adjustments Laptops) */
+@media (max-width: 39.625em) {
+  /* GENERAL FONTS */
+  .heading-primary {
+    font-size: 6.6rem;
+    letter-spacing: -2px;
+  }
+
+  .heading-secondary, .about-stats-card span {
+    font-size: 5.6rem;
+  }
+
+  .card-pricing-sign, .card-pricing-price {
+    font-size: 5rem;
+  }
+
+
+
+  /* SERVICES SECTION */
+  .service-subheading {
+    width: 100%;
+  }
+
+
+  /* TESTIMONIALS SECTION */
+  .testimonials-conroller {
+    top: 10.5rem;
+    right: 4.4rem;
+  }
+
+  /* FEATURES SECTION */
+  .pricing-table > thead > tr, .pricing-table > tbody > tr {
+    grid-template-columns: 30% 1fr 1fr 1fr 1fr;
+  }
+
+  .pricing-table > thead > tr, .pricing-table > tbody > tr {
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
 
 
 }
 
 
+/* 571 below (Laptop) */
+@media (max-width: 35.6875em) {
+
+  /* HERO SECTION */
+  .hero {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    background-color: red;
+  }
+
+  .hero-textbox {
+    padding: 4rem;
+    top: 25%;
+  }
+  
+  .hero-container-img {
+    grid-row: 1;
+    height: 100vh;
+    padding: 0;
+    
+  }
+
+  .hero-img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* PROJECTS SECTION */
+  .grid-project {
+    grid-template-columns: 1fr;
+    
+    gap: 4rem;
+  }
+
+  .project-card {
+    padding: 0 8rem;
+  }
+
+  .project-card:nth-child(3) {
+    margin-top: 0;
+  }
+  
+  .project-card:nth-child(5) {
+    margin-top: 0;
+  }
+  
+  .project-card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  /* SERVICES SECTION */
+  .service-subheading {
+    width: 90%;
+  }
+  
+  /* HEADER COLOR CHANGE */
+  /* .section-header {
+    background-color: #6F787D;
+  } */
+
+  .grid-service {
+    grid-template-columns: 1fr;
+    padding: 0 12rem;
+  }
+
+  /* PRICING SECTION */
+  .grid-pricing {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card--wrapper {
+    padding: 0 8rem;
+  }
+
+  /* FOOTER SECTION */
+  .grid-footer {
+    grid-template-columns: 1fr;
+    /* gap: 4rem; */
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+
+/* 553 below (Laptop) */
+@media (max-width: 34.5625em) {
+  .hero-textbox {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }  
+
+  .heading-primary {
+    grid-column: 1/-1;
+  }
+
+  .normal-ptext.hero-p.mt-2.width-50 { /* hero -- paragraph wrapper */
+    grid-column: 1/-1;
+    margin-top: 0;
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  
+  .btn.btn-outline.mr-2.mt-3 { /* hero -- btn left */
+    grid-column: 1;
+    margin: 0;
+  }
+
+  .btn.btn-fill.mt-3 { /* hero -- btn right */
+    grid-column: 2;
+    margin: 0;
 
 
+  }
 
-
-
+}
 
 
 

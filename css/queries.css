@@ -290,6 +290,74 @@
     gap: 4rem;
   }
 
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  #header-contact-btn {
+    display: none;
+  }
+
+  #header-contact-link {
+    display: block;
+  }
+
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: 9999;
+
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .main-nav-link:link, .main-nav-link:visited{
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+
+  #header-contact-link {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 
 
 }
@@ -377,7 +445,7 @@
 
   .hero-textbox {
     padding: 4rem;
-    top: 25%;
+    top: 45%;
   }
   
   .hero-container-img {
@@ -480,28 +548,165 @@
   .btn.btn-fill.mt-3 { /* hero -- btn right */
     grid-column: 2;
     margin: 0;
+  }
 
+  .normal-ptext.hero-p.mt-2.width-50 {
+    text-align: left;
+    padding: 0px 0rem;
+  }
 
+  .hero-textbox {
+    text-align: left;
+  }
+
+  .btn.btn-outline.mr-2.mt-3, .btn.btn-fill.mt-3 {
+    text-align: center;
+  }
+
+  .contact-wrapper {
+    gap: 2rem;
+    padding: 2rem 0;
   }
 
 }
 
 
+/* 480 below (Big Mobile) */
+@media (max-width: 30em) {
 
 
-/* 1200 below (Laptop) */
-/* @media (max-width: 75em) {
+   
 
-  html {
-    font-size: 59.375%;  
-    
+  .project-card {
+    padding: 0px 4rem;
   }
 
-  .service-subheading, .flex-header-subheading {
-    margin: 2rem 0 4rem;
+  .grid-service {
+    padding: 0px 8rem;
+  }
+
+  .pricing-card--wrapper {
+    padding: 0 4rem;
+  }
+
+  .testimonials-conroller {
+    top: 14.1rem;
+    right: 4.4rem;
+  }
+
+  .heading-secondary.center, .normal-ptext.service-subheading, .normal-ptext.flex-header-subheading {
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  .heading-testimonials {
+    margin: 0 4rem;
+  }
+
+  .testimonial-wrapper {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+} 
+
+/* 471 below (Big Mobile) */
+@media (max-width: 29.4375em) {
+  .testimonials-conroller {
+    top: 13rem;
+    right: 4.4rem;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-col-main, .footer-links-wrapper, .footer-side , .footer-pic  {
+    align-items: center;
+  }
+
+  .project-card {
+    padding: 0;
+  }
+
+  .grid-service {
+    padding: 0px 4rem;
+  }
+
+  .testimonial-wrapper {
+    margin-left: 3.5rem;
+  }
+
+  .pricing-card--wrapper {
+    padding: 0 0rem;
+  }
+
+  .btn {
+    padding: 1.4rem 2.2rem;
+  }
+
+  .form-btn.btn {
+    padding: 1.4rem 4rem;
+  }
+} 
+
+
+/* 413 below (Big Mobile) */
+@media (max-width: 25.8125em) {
+  .hero-textbox {
+    gap: 2rem;
+  }
+
+  .pricing-table > thead > tr, .pricing-table > tbody > tr {
+    padding: 1rem 0rem;
+    gap: 0.5rem;
+  }
+
+  .pricing-table--wrapper, .contact-card--wrapper, .section-header {
+    padding: 0 2rem;
+  }
+
+  .grid-contact-card {
+    padding: 2rem;
+  }
+
+  .grid-about, .grid-service, .grid-pricing, .pricing-table--wrapper, .contact-card--wrapper, .section-header {
+    padding: 0 2rem;
+  }
+
+  .heading-project--wrapper, .grid-project--wrapper {
+    padding: 0 2rem;
+  }
+
+  .heading-testimonials {
+    margin: 0 2rem;
+  }
+
+  .testimonial-wrapper {
+    margin-left: 1.2rem;
   }
   
-} */
+  .heading-secondary.center, .normal-ptext.service-subheading, .normal-ptext.flex-header-subheading {
+    padding: 0;
+    text-align: center;
+  }
 
+  .hero-textbox {
+    padding: 2rem;
+  }
+  
+  .normal-ptext.flex-header-subheading {
+    padding: 0 2rem;
+  }
+} 
 
-/* 56.25 */
+/* 380 below (Big Mobile) */
+@media (max-width: 23.75em) {
+  .btn {
+    padding: 1.4rem 1rem;
+  }
+
+  .form-btn.btn {
+    padding: 1.4rem 4rem;
+  }
+} 
+

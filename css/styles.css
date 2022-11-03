@@ -64,6 +64,7 @@ paragraph default:
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -71,6 +72,8 @@ body {
   line-height: 1;
   font-weight: 200;
   color: #1c1917;
+
+  overflow-x: hidden;
 }
 
 /* -----
@@ -102,6 +105,8 @@ SVG Icons - svgicons.sparkk.fr
   align-items: center;
   height: 8rem;
   padding: 0 10rem;
+
+  position: relative;
 }
 
 .logo {
@@ -130,6 +135,25 @@ SVG Icons - svgicons.sparkk.fr
 
 .main-nav-link:active, .main-nav-link:hover{
   box-shadow: 0 2px 0 0 #86AD12;
+}
+
+/* STICKY NAVIGATION */
+.sticky .section-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.sticky .section-hero {
+  margin-top: 8rem;
 }
 
 /************************************/
@@ -281,6 +305,14 @@ SVG Icons - svgicons.sparkk.fr
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+#header-contact-btn {
+  display: block;
+}
+
+#header-contact-link {
+  display: none;
+}
+
 /************************************/
 /***** HERO *****/
 /************************************/
@@ -304,7 +336,7 @@ SVG Icons - svgicons.sparkk.fr
   transform: translateY(-50%);
   max-width: 120rem;
 
-  z-index: 999;
+  z-index: 20;
 }
 
 .hero-container-img {
@@ -1190,4 +1222,21 @@ SVG Icons - svgicons.sparkk.fr
   fill: #86AD12;
 }
 
- 
+ /* MOBILE NAV*/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}

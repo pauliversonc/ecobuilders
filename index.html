@@ -14,8 +14,8 @@
     rel="stylesheet">
 </head>
 
-<body id="home">
-  <header class="section-header">
+<body class="sticky" id="home">
+  <header class="section-header" id="header">
     <a href="#"><img class="logo" src="images/logo/logo-2.png" alt=""></a>
     <nav class="main-nav">
       <ul class="main-nav-list">
@@ -25,13 +25,16 @@
         <li><a class="main-nav-link" href="#services">Services</a></li>
         <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
         <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-        <!-- <li><a class="main-nav-link btn btn-nav" href="#">Contacts</a></li> -->
-
+        <li><a class=" btn btn-fill" id="header-contact-link" href="#contacts">Contacts</a></li>
+        
       </ul>
     </nav>
-    <!-- <button class="btn btn-nav" style="">Contact Us</button> -->
-    <a class="btn btn-fill" href="#contacts">Conctact us</a>
+    <a class="btn btn-fill" href="#contacts" id="header-contact-btn">Conctact us</a>
 
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
   </header>
 
 

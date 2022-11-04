@@ -293,6 +293,20 @@ btnNavEl.addEventListener("click", function () {
   
 });
 
+const nav_links = document.querySelectorAll(".main-nav-link");
+
+nav_links.forEach(nav_link => {
+  nav_link.addEventListener('click', function() {
+    headerEl.classList.toggle("nav-open");
+  })
+});
+
+
+const nav_links_contact_btn = document.getElementById("header-contact-link");
+nav_links_contact_btn.addEventListener('click', function() {
+  headerEl.classList.toggle("nav-open");
+})
+
 // Sticky navigation
 const sectionHeroEl = document.querySelector(".section-hero");
 

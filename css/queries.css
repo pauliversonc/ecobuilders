@@ -568,15 +568,14 @@
     padding: 2rem 0;
   }
 
+  .testimonials-conroller {
+    top: 14rem;
+  }
 }
 
 
 /* 480 below (Big Mobile) */
 @media (max-width: 30em) {
-
-
-   
-
   .project-card {
     padding: 0px 4rem;
   }

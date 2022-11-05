@@ -919,8 +919,10 @@ SVG Icons - svgicons.sparkk.fr
 .grid-contact-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* background-image: linear-gradient(to right, rgba(67, 81, 14, 0.7), rgba(28, 25, 23, 1)), url("/images/hero/paul-blenkhorn-gkKI23ZeaHM-unsplashb.jpg"); */
-  background-image: linear-gradient(to right, rgb(66, 81, 14, 0.5), rgba(28, 25, 23, 1)), url("images/contacts/contact-bg.jpg");
+  /* background-image: linear-gradient(to right, rgba(67, 81, 14, 0.7), rgba(28, 25, 23, 1)), url("images/hero/hero.jpg"); */
+  background-image: linear-gradient(to right, rgb(66, 81, 14, 0.5), rgba(28, 25, 23, 1)), url("../images/contacts/contactbg.jpg");
+  /* background-image: linear-gradient(to right, #86ad12, #759f0e, #65920a, #558406, #467703, #3b6a05, #315e07, #285207, #204309, #1a3509, #142706, #0d1a00); */
+  /* background-image: linear-gradient(to right bottom, #86ad12, #759f0e, #65920a, #558406, #467703, #3b6a05, #315e07, #285207, #204309, #1a3509, #142706, #0d1a00); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem;

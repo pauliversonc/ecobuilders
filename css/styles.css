@@ -920,7 +920,7 @@ SVG Icons - svgicons.sparkk.fr
   display: grid;
   grid-template-columns: 1fr 2fr;
   /* background-image: linear-gradient(to right, rgba(67, 81, 14, 0.7), rgba(28, 25, 23, 1)), url("/images/hero/paul-blenkhorn-gkKI23ZeaHM-unsplashb.jpg"); */
-  background-image: linear-gradient(to right, rgb(66, 81, 14, 0.5), rgba(28, 25, 23, 1)), url("/images/hero/hero-image-5.jpg");
+  background-image: linear-gradient(to right, rgb(66, 81, 14, 0.5), rgba(28, 25, 23, 1)), url("images/contacts/contact-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem;

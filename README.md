@@ -24,21 +24,23 @@ The ECO Builders website includes the following features:
 
 ## Design Approach
 
-The ECO Builders website was designed using the *desktop first* approach, which means that the desktop version of the site was designed first and then scaled down for smaller screen sizes. This approach allowed for a more consistent and cohesive design across all screen sizes.
+The ECO Builders website was designed using the **desktop first** approach, which means that the desktop version of the site was designed first and then scaled down for smaller screen sizes. This approach allowed for a more consistent and cohesive design across all screen sizes.
 
 ## Demo
 
-To see the ECO Builders website in action, visit [https://example.com](https://example.com).
+To see the ECO Builders website in action, visit [https://ecobuilders.netlify.app/](https://ecobuilders.netlify.app/).
 
 ## Acknowledgements
 
 I would like to thank the following resources for their inspiration and assistance in building the ECO Builders website:
 
 - [Unsplash](https://unsplash.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [W3Schools](https://www.w3schools.com/)
+- [Hero icons](https://v1.heroicons.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [Font Awesome](https://fontawesome.com/)
 - [Google](https://www.google.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [W3Schools](https://www.w3schools.com/)
 
 ## Author
 

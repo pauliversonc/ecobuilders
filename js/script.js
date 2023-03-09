@@ -11,8 +11,6 @@ const scrollMax = wrapper.scrollWidth - wrapper.clientWidth;
 buttons.forEach(button => {
   button.addEventListener('click', function() {
 
-    console.log(scrollAmount)
-
     if (this.id === 'prev' && scrollAmount > 0) {
       wrapper.scrollTo({
         top: 0,
@@ -313,7 +311,6 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");

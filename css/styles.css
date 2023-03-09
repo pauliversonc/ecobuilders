@@ -1241,3 +1241,7 @@ SVG Icons - svgicons.sparkk.fr
 /* .icon-mobile-nav[name="close-outline"] {
   display: none;
 } */
+
+.icon-mobile-nav.times {
+  display: none;
+}
